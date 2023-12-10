@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Su Kalyar Sint
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <img id="modeToggle" class="icon color_icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png"
+                        alt="Color Theme Icon" />
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <nav id="humburger-nav">
+        <div class="logo">Su Kalyar Sint</div>
+        <div class="humburger-menu">
+            <div class="humburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+                <li>
+                    <img id="modeToggle2" class="icon color_icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png"
+                        alt="Color Theme Icon" />
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_picture_container">
+            <img src="./assets/logo/Young_businesswoman_holding_tablet_cartoon_illustration.jpg" alt="Su Kalyar Sint Profile Picture" />
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hi, I am</p>
+            <h1 class="title">Su Kalyar Sint</h1>
+            <p class="section_text_p2">Software Engineer</p>
+            <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Su_Kalyar_Sint.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials_container">
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="My Linkedin Profile" class="icon linkedin_icon"
+                    onclick="location.href='https://www.linkedin.com/in/su-kalyar-sint-9a7593239/'" />
+                <img src="./assets/github_light.png" src-light="./assets/github_light.png"
+                    src-dark="./assets/github_dark.png" alt="My GitHub Profile" class="icon github_icon"
+                    onclick="location.href='https://github.com/sui34'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <!-- <div class="section_picture_container">
+                <img src="./assets//about-pic.png" alt="Profile Picture" class="about_pic"/>
+            </div> -->
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+                            src-dark="./assets/experience_dark.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ Years <br /> Full Stack Development</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+                            src-dark="./assets/education_dark.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree <br />(Business Information Technology)</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <p>
+                        Hello, My name is Su Kalyar Sint, from Myanmar. Bringing over 4 years of hands-on experience from dynamic roles in both Singapore and Myanmar, I am a dedicated Full-Stack Developer, proficient in both front-end and back-end development. Beyond coding proficiency, I specialize in API development and adeptly manage databases, ensuring comprehensive solutions in every project. I'm committed to delivering high-quality software that meets and exceeds expectations. Let's build something extraordinary together!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <!-- FE -->
+                <div class="experience_container">
+                    <h2 class="experience_sub_title">Front-End Development</h2>
+                    <div class="experience_article_container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <!-- BE -->
+                <div class="experience_container">
+                    <h2 class="experience_sub_title">Back-End Development</h2>
+                    <div class="experience_article_container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>C# Dotnet</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>REST API</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>ASP.Net MVC</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+                <!-- DATABASE -->
+                <div class="experience_container">
+                    <h2 class="experience_sub_title">DataBase</h2>
+                    <div class="experience_article_container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>MSSQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img                             src="./assets/checkmark_light.png" 
+                            src-light="./assets/checkmark_light.png"
+                            src-dark="./assets/checkmark_dark.png"  alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>A5_SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article> -->
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <!-- VersionControl -->
+                <div class="experience_container">
+                    <h2 class="experience_sub_title">Version Control</h2>
+                    <div class="experience_article_container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>GitBash</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon" />
+                            <div>
+                                <h3>SVN</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon proj_arrow" onclick="location.href='./#projects'" />
+
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="experience_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/Projects/taking_note.jpg" alt="Project 1" class="project_img" />
+                    </div>
+                    <h2 class="experience_sub_title project_title">Taking Note</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34/NoteTaking'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="experience_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/Projects/Calculator_doodle.jpg" alt="Project 3" class="project_img" />
+                    </div>
+                    <h2 class="experience_sub_title project_title">Calculator</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34/Calculator'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="experience_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/Projects/Guess_the_number.jpg" alt="Project 2" class="project_img" />
+                    </div>
+                    <h2 class="experience_sub_title project_title">Number Guessing</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34/NumberGuessingGame'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project_btn" onclick="location.href='https://github.com/sui34'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon contact_arrow" onclick="location.href='./#contact'" />
+
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img src="./assets/email_light.png" src-light="./assets/email_light.png"
+                    src-dark="./assets/email_dark.png" alt="Email icon" class="icon contact_icon email_icon">
+                <p><a href="mailto:sukalyarsint@gmail.com">sukalyarsint@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="My Linkedin Profile" class="icon linkedin_icon"
+                    onclick="location.href='https://www.linkedin.com/in/su-kalyar-sint-9a7593239/'" />
+                <p><a href="https://www.linkedin.com/in/su-kalyar-sint-9a7593239/">Linked In</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav id="footer_nav">
+            <div class="nav_links_container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Su Kalyar Sint. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
